@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/resultPanel"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="테스트 결과"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="18dp"
+                android:text="외향성"
+                android:textColor="@color/buttonTextColor"
+                android:backgroundTint="@color/colorVeryInacc"
+                android:id="@+id/eBtn"/>
+            <Button
+                android:background="@drawable/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="18dp"
+                android:textColor="@color/buttonTextColor"
+                android:backgroundTint="@color/colorInacc"
+                android:text="호감성"
+                android:id="@+id/aBtn"/>
+            <Button
+                android:background="@drawable/button_style"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/colorMiddle"
+                android:layout_height="wrap_content"
+                android:textColor="@color/buttonTextColor"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="18dp"
+                android:text="안정성"
+                android:id="@+id/sBtn"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAcc"
+                android:text="성실성"
+                android:textColor="@color/buttonTextColor"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="18dp"
+                android:id="@+id/cBtn"/>
+
+            <Button
+                android:background="@drawable/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorVeryAcc"
+                android:text="개방성"
+                android:textColor="@color/buttonTextColor"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="18dp"
+                android:id="@+id/iBtn"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:layout_marginTop="80dp"
+            android:textAlignment="center"
+            android:text="각 버튼을 눌러 결과를 확인하세요."
+            android:id="@+id/expText"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="처음으로 돌아가기"
+        android:background="@drawable/button_style"
+        android:textSize="23dp"
+        android:backgroundTint="#00BCD4"
+        android:textColor="#fff"
+        android:id="@+id/resetBtn"
+        android:paddingHorizontal="80dp"/>
+</RelativeLayout>
